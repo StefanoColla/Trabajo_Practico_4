@@ -5,14 +5,14 @@ package punto2tp4;
 /** @author Colla Stefano-Mena Hernan */
 public class Paciente extends Persona {
     private String grupoSanguineo;
-    private HistoriaClinica histClinica;
-    private TurnoPaciente turno;
+    HistoriaClinica histClinica;
+    TurnoPaciente turno;
     
     
     public Paciente(String nombre,String documento,String grupoS){
         super();
         histClinica=new HistoriaClinica();
-        
+        turno=new TurnoPaciente();
         this.grupoSanguineo=grupoS;
         this.setDocumento(documento);
         this.setNombre(nombre);

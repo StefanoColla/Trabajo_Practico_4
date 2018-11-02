@@ -5,9 +5,9 @@ public class Enfermedad implements Comparable<Enfermedad> {
     private String tipo;
     private String nombre;
     private int tipoE;
-    private Integer tiempo;
+    private String tiempo;
     
-    public Enfermedad(String tipo,String nombre,int tiempo){
+    public Enfermedad(String tipo,String nombre,String tiempo){
         this.nombre=nombre;
         this.tipo=tipo;
         this.tiempo=tiempo;
@@ -17,7 +17,8 @@ public class Enfermedad implements Comparable<Enfermedad> {
             this.tipoE=0;
         }
     }
-
+    
+   
     
     public String getTipo() {
         return tipo;
@@ -45,7 +46,7 @@ public class Enfermedad implements Comparable<Enfermedad> {
 
     @Override
     public String toString() {
-        return "Enfermedad{" + "tipo=" + tipo + ", nombre=" + nombre + ", tiempo="+ tiempo + '}';
+        return "tipo=" + tipo + ", nombre=" + nombre + ", tiempo="+ tiempo;
     }
 
     @Override

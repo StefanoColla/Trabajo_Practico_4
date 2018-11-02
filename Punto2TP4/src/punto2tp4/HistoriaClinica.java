@@ -6,8 +6,8 @@ import java.util.Collections;
 
 /** @author Colla Stefano-Mena Hernan */
 public class HistoriaClinica {
-    private List <Enfermedad> enfermedades;
-    private List <String> medicamentos;
+    List <Enfermedad> enfermedades;
+    List <String> medicamentos;
     
     public HistoriaClinica(){
         enfermedades=new LinkedList();

@@ -8,7 +8,7 @@ public class Persona {
     private String sexo;
     private String fechaNacimiento;
     String documento;
-    private int telefono;
+    private String telefono;
     
     public Persona(){
         this.nombre=null;
@@ -17,7 +17,7 @@ public class Persona {
         this.correo=null;
         this.documento=null;
         this.sexo=null;
-        this.telefono=0;
+        this.telefono=null;
     }
     
     public String getNombre() {
@@ -55,11 +55,11 @@ public class Persona {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
